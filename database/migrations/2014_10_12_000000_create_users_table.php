@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
+        /*
+        // sqlite adatbázis
         Schema::connection('sqlite')->create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
@@ -32,6 +34,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+        */
     }
 
     /**
